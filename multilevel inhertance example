@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+class university
+{
+    public:
+    string uName;
+    string cName;
+
+};
+
+class faculty: public university
+{
+    public:
+     int fId;
+};
+class student: public faculty
+{
+    public:
+    string sName;
+    int roll;
+    int reg;
+
+};
+
+int main()
+
+
+{
+   student stuobj;
+   stuobj.uName="LPU";
+   stuobj.cName="MCA";
+   stuobj.fId= 123;
+   stuobj.sName="aftab";
+   stuobj.roll=12;
+   stuobj.reg=1129;
+   cout<< stuobj.uName << "\n";
+   cout<< stuobj.cName << "\n";
+   cout<< stuobj.fId << "\n";
+   cout<< stuobj.sName << "\n";
+   cout<< stuobj.roll << "\n";
+   cout<< stuobj.reg << "\n";
+
+   return 0;
+
+ }
